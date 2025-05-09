@@ -1,0 +1,138 @@
+[2025-05-09 13:17:42] local.ERROR: Method Illuminate\Database\Schema\Blueprint::interger does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Schema\\Blueprint::interger does not exist. at /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Macroable/Traits/Macroable.php:115)
+[stacktrace]
+#0 /home/alunoifpe/wb2jp/Atividades/atividade_02/database/migrations/2025_05_09_130003_create_authors_table.php(15): Illuminate\\Database\\Schema\\Blueprint->__call('interger', Array)
+#1 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(478): Illuminate\\Database\\Migrations\\Migration@anonymous->{closure:Illuminate\\Database\\Migrations\\Migration@anonymous(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Support/helpers.php(399): Illuminate\\Database\\Schema\\Builder->{closure:Illuminate\\Database\\Schema\\Builder::create():475}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create('authors', Object(Closure))
+#5 /home/alunoifpe/wb2jp/Atividades/atividade_02/database/migrations/2025_05_09_130003_create_authors_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#7 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#8 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runMigration():435}()
+#9 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#10 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runUp():250}()
+#11 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render('2025_05_09_1300...', Object(Closure))
+#12 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2025_05_09_1300...', Object(Closure))
+#13 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp('/home/alunoifpe...', 2, false)
+#14 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#15 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#16 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->{closure:Illuminate\\Database\\Console\\Migrations\\MigrateCommand::runMigrations():109}()
+#17 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#18 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#19 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
+#21 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#22 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call(Array)
+#25 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 /home/alunoifpe/wb2jp/Atividades/atividade_02/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#33 {main}
+"} 
+[2025-05-09 13:37:41] local.ERROR: Method Illuminate\Database\Schema\Blueprint::unsignerBigInteger does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Schema\\Blueprint::unsignerBigInteger does not exist. at /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Macroable/Traits/Macroable.php:115)
+[stacktrace]
+#0 /home/alunoifpe/wb2jp/Atividades/atividade_02/database/migrations/2025_05_09_133201_create_books_table.php(17): Illuminate\\Database\\Schema\\Blueprint->__call('unsignerBigInte...', Array)
+#1 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(478): Illuminate\\Database\\Migrations\\Migration@anonymous->{closure:Illuminate\\Database\\Migrations\\Migration@anonymous(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Support/helpers.php(399): Illuminate\\Database\\Schema\\Builder->{closure:Illuminate\\Database\\Schema\\Builder::create():475}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create('books', Object(Closure))
+#5 /home/alunoifpe/wb2jp/Atividades/atividade_02/database/migrations/2025_05_09_133201_create_books_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#7 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#8 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runMigration():435}()
+#9 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#10 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runUp():250}()
+#11 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render('2025_05_09_1332...', Object(Closure))
+#12 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2025_05_09_1332...', Object(Closure))
+#13 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp('/home/alunoifpe...', 5, false)
+#14 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#15 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#16 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->{closure:Illuminate\\Database\\Console\\Migrations\\MigrateCommand::runMigrations():109}()
+#17 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#18 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#19 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
+#21 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#22 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call(Array)
+#25 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 /home/alunoifpe/wb2jp/Atividades/atividade_02/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#33 {main}
+"} 
+[2025-05-09 13:38:06] local.ERROR: Method Illuminate\Database\Schema\Blueprint::unsignerBigInteger does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Schema\\Blueprint::unsignerBigInteger does not exist. at /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Macroable/Traits/Macroable.php:115)
+[stacktrace]
+#0 /home/alunoifpe/wb2jp/Atividades/atividade_02/database/migrations/2025_05_09_133201_create_books_table.php(17): Illuminate\\Database\\Schema\\Blueprint->__call('unsignerBigInte...', Array)
+#1 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(478): Illuminate\\Database\\Migrations\\Migration@anonymous->{closure:Illuminate\\Database\\Migrations\\Migration@anonymous(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Support/helpers.php(399): Illuminate\\Database\\Schema\\Builder->{closure:Illuminate\\Database\\Schema\\Builder::create():475}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(475): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Database\\Schema\\Builder->create('books', Object(Closure))
+#5 /home/alunoifpe/wb2jp/Atividades/atividade_02/database/migrations/2025_05_09_133201_create_books_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#7 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#8 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runMigration():435}()
+#9 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#10 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\\Database\\Migrations\\Migrator->{closure:Illuminate\\Database\\Migrations\\Migrator::runUp():250}()
+#11 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\\Console\\View\\Components\\Task->render('2025_05_09_1332...', Object(Closure))
+#12 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2025_05_09_1332...', Object(Closure))
+#13 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\\Database\\Migrations\\Migrator->runUp('/home/alunoifpe...', 5, false)
+#14 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#15 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#16 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->{closure:Illuminate\\Database\\Console\\Migrations\\MigrateCommand::runMigrations():109}()
+#17 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#18 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#19 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
+#21 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#22 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call(Array)
+#25 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 /home/alunoifpe/wb2jp/Atividades/atividade_02/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#33 {main}
+"} 
+[2025-05-09 13:52:42] local.ERROR: Command "migrate:resete" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migrate:resete\" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status at /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php:726)
+[stacktrace]
+#0 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(284): Symfony\\Component\\Console\\Application->find('migrate:resete')
+#1 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/alunoifpe/wb2jp/Atividades/atividade_02/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/alunoifpe/wb2jp/Atividades/atividade_02/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
